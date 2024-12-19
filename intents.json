@@ -1,0 +1,188 @@
+{"intents": [
+        {"tag": "greetings",
+         "patterns": ["Hi there", "Hi", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag":"age",
+         "patterns": ["how old","how old are you?","what is your age","how old are you","age?"],
+         "responses":["I get reborn after every compilation","hey!","my owners are averagely 20 years!"]
+        },
+        {"tag":"name",
+         "patterns": ["what is your name","what should i call you","what's your name?","who are you?","can you tell me your name"],
+         "responses":["you can call me Medbot!","i am Medbot!","i am Medbot your medical assistant"]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can guide you through Adverse drug reaction list, Blood pressure tracking, Hospitals and Pharmacies", "Offering support for Adverse drug reaction, Blood pressure, Hospitals and Pharmacies, Symptoms for small problems"],
+         "context": [""]
+        },
+        {
+                "tag": "symptom_query",
+                "patterns": ["I have these symptoms", "I am feeling unwell", "Can you help me diagnose my problem?", "These are my issues"],
+                "responses": [
+                    "Can you list all your symptoms? If not, I can help by asking specific questions.",
+                    "Tell me about your symptoms so I can narrow down the possible conditions."
+                ],
+                "context": ["gathering_symptoms"]
+        },
+        {"tag":"common cold symptoms",
+         "patterns": ["Runny or stuffy nose",
+                      "Sore throat",
+                      "Cough",
+                      "Congestion",
+                      "Slight body aches or a mild headache",
+                      "Sneezing",
+                      "Low-grade fever",
+                      "Generally feeling unwell (malaise)",
+                      "I have a runny nose",
+                      "My throat hurts",
+                        "I keep sneezing", 
+                        "I feel congested", 
+                        "I have mild body aches",
+                         "I feel tired but not too bad"
+                        ],
+         "responses":["It seems that you are suffering from common cold"]
+        },
+        {"tag":"fever symptoms",
+         "patterns":["Sweating",
+                     "Chills and shivering",
+                     "Headache",
+                     "Muscle aches",
+                     "Loss of appetite",
+                     "Irritability",
+                     "Dehydration",
+                     "General weakness"],
+         "responses":["It seems that you are suffering from fever"]
+        },
+        {"tag":"Diabetes symptoms",
+         "patterns":["increased hunger",
+                     "increased thirst",
+                     "weight loss",
+                     "frequent urination",
+                     "blurry vision",
+                     "extreme fatigue"],
+         "responses":["It seems that you are suffering from Diabetes"]
+        },
+        {
+        "tag": "migraine_symptoms",
+        "patterns": [
+                "I have a severe headache", "I feel nausea with my headache", 
+                "My head hurts and I can't stand light", "There’s pain in one side of my head"
+        ],
+        "responses": [
+                "It seems like you might have a migraine. Would you like tips for relief or suggestions for consulting a specialist?"
+        ]
+        },
+        {
+        "tag": "anxiety_symptoms",
+        "patterns": [
+                "I feel very nervous", "I can't focus because of stress", 
+                "My heart races when I think of certain things", "I have trouble sleeping and I worry a lot"
+        ],
+        "responses": [
+                "It seems like you might be experiencing anxiety. Would you like tips on stress management or to connect with a mental health professional?"
+        ]
+        },
+        {"tag":"Depression symptoms",
+         "patterns":["Hopeless outlook",
+                     "Lost interest",
+                     "Increased fatigue",
+                     "sleep problem",
+                     "Anxiety",
+                     "change in weight",
+                     "Looking at death"],
+         "responses":["It seem that you are suffering from depression"]
+        },
+        {"tag":"Asthma symptoms",
+         "patterns":["coughing",
+                     "tightness in the chest",
+                     "shortness of breath",
+                     "difficulty talking",
+                     "panic",
+                     "fatigue"],
+         "responses":["It seem that you are suffering from Asthma"]
+        },
+
+        {"tag":"common cold prevention",
+         "patterns":["What medicines can I buy to help me with my common cold?","tell me some prevention method from common cold","What should I eat or drink if i am suffering from common cold?","How can I keep from getting a cold or the flu?"],
+         "responses":["medicines you can consume : Dextromethorphan,Decongestant,Diphenhydramine,Crocin Cold & Flu Max, preventions that you must follow :Wash your hands,Avoid touching your face,Clean frequently used surfaces,Use hand sanitizers,SUGGESTED FOODS ARE:Garlic,Vitamin C–containing fruits,Leafy greens,Broccoli,Oatmeal,Spices,Chicken Soup"]
+        },
+        {"tag":"fever prevention",
+         "patterns":["Medicines for fever","What medicines can I buy to help me with my fever?","tell me some prevention method from fever","What should I eat or drink if i am suffering from fever?","How can I keep from getting a fever?"],
+         "responses":["medicines you can consume : acetaminophen ,ibuprofen,aspirin,Crocin Cold & Flu Max, prevention that you must follow :Wash your hands,Cover your mouth when you cough and your nose when you sneeze,Clean frequently used surfaces,Avoid sharing cups, glasses, and eating utensils with other people.,SUGGESTED FOODS ARE:Garlic,Vitamin C–containing fruits,Leafy greens,Broccoli,Oatmeal,Spices,Chicken Soup"]
+        },
+        {"tag":"diabetes prevention",
+         "patterns":["What medicines can I buy to help me with my diabetes?","tell me some prevention method from diabetes","What should I eat or drink if i am suffering from diabetes?","How can I keep from getting diabetes?"],
+         "responses":["medicines you can consume : Insulin ,Amylinomimetic drug,Dipeptidyl peptidase-4 (DPP-4) inhibitor, prevention that you must follow :Cut Sugar and Refined Carbs From Your Diet,Work Out Regularly,Drink Water as Your Primary Beverage,Lose Weight If You’re Overweight or Obese,Quit Smoking, Follow a Very-Low-Carb Diet,Watch Portion Sizes,SUGGESTED FOODS ARE:Leafy greens,Avocados,Eggs"]
+        },
+        {"tag":"depression prevention",
+         "patterns":["What medicines can I buy to help me with my depression?","tell me some prevention method from depression","What should I eat or drink if i am suffering from depression?","How can I keep from getting depression?"],
+         "responses":["medicines you can consume :  brexpiprazole, quetiapine,olanzapine, prevention that you must follow :Exercise regularly,Cut back on social media time,Drink Water as Your Primary Beverage,Build strong relationships,Minimize your daily choices, Follow a Very-Low-Carb Diet,SUGGESTED FOODS ARE:Get Enough Vitamin D,Include Omega-3 Fatty Acids,Beans and legumes"]
+        },
+        {"tag":"asthma prevention",
+         "patterns":["What medicines can I buy to help me with my asthma?","tell me some prevention method from asthma","What should I eat or drink if i am suffering from asthma?","How can I keep from getting asthma?"],
+         "responses":["medicines you can consume : epinephrine,anticholinergic,Proair HFA, prevention that you must follow : Identify Asthma Triggers, Stay Away From Allergens,Avoid Smoke of Any Type,SUGGESTED FOODS ARE:carrots,juice,eggs,broccoli,cantaloupe,milk"]
+        },
+        {
+                "tag": "prevention_migraine",
+                "patterns": [
+                    "How to prevent migraines?", "Tips to avoid migraines", "How to stay safe from migraines?", "Migraine prevention advice", "How to reduce migraine triggers?",
+                    "What medicines can I buy to help me with my migraine?"
+                ],
+                "responses": [
+                    "Identify and avoid triggers like bright lights, loud sounds, strong smells, or certain foods (e.g., caffeine, chocolate, processed foods).",
+                    "Maintain a regular sleep schedule and ensure you get enough rest.",
+                    "Stay hydrated throughout the day to avoid dehydration-related migraines.",
+                    "Manage stress with relaxation techniques like yoga, meditation, or breathing exercises.",
+                    "Eat balanced meals at regular intervals to prevent blood sugar dips.",
+                    "Consider using a headache diary to track triggers and consult a doctor for long-term management."
+                ]
+            },
+            {
+                "tag": "prevention_anxiety",
+                "patterns": [
+                    "How to prevent anxiety?", "Tips to avoid anxiety", "How to stay calm?", "Anxiety prevention advice", "How to reduce stress and anxiety?",
+                    "What medicines can I buy to help me with my anxiety?"
+                ],
+                "responses": [
+                    "Practice mindfulness or meditation regularly to manage stress levels.",
+                    "Engage in regular physical activity like walking, yoga, or aerobic exercise to boost your mood.",
+                    "Avoid excessive caffeine, alcohol, or nicotine, as they can increase anxiety.",
+                    "Establish a consistent sleep routine to ensure proper rest.",
+                    "Learn and practice time management to reduce feelings of being overwhelmed.",
+                    "Connect with friends and family for emotional support and avoid isolating yourself.",
+                    "If anxiety persists, consider talking to a therapist or counselor for guidance."
+                ]
+        },
+        {"tag":"Consultation",
+         "patterns": ["who should i contact for consultation?","is there any doctor available?","can you give me some suggestions for doctor consultations?","can you set up a meeting with a doctor for consultation?","is there any doctor available for consultation"],
+         "responses":["You can contact various doctors here for any kind of consultation: 1. https://www.1mg.com/online-doctor-consultation, 2. https://www.tatahealth.com/online-doctor-consultation/general-physician, 3. https://www.doconline.com/, or you can pay a visit to your local area doctor or family doctor."]
+        },
+        {
+        "tag": "adverse_drug_reactions",
+        "patterns": [
+        "How to check adverse drug reactions?", "List drugs causing side effects", 
+        "Which drugs are safe?", "Drugs without side effects?"
+        ],
+        "responses": [
+        "Always consult your doctor for detailed drug information. Ensure you read the leaflet that comes with your medicine."
+        ]
+        }
+   ]
+}
